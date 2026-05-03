@@ -1438,13 +1438,14 @@ body:has(.tu-lp) .main-wrapper:before {
     margin-top: 12px !important;
     margin-bottom: 8px !important;
     overflow: hidden;
-    height: 8px;
+    height: 16px;
+    box-shadow: 0 2px 8px rgba(20, 33, 61, 0.12);
 }
 
 .dashboard-wrapper .cbe-block-progress-line {
     background-color: #14213d !important;
     border-radius: 10px !important;
-    height: 8px;
+    height: 16px;
 }
 
 .dashboard-wrapper .cbe-block-progress-label-wrapper {

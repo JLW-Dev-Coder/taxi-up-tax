@@ -1429,5 +1429,26 @@ body:has(.tu-lp) .main-wrapper:before {
     background: #dc2626 !important;
     color: #ffffff !important;
 }
+
+/* --- Dashboard — Progress Bar --- */
+.dashboard-wrapper .cbe-block-progress-single {
+    background-color: #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
+    overflow: hidden;
+    height: 8px;
+}
+
+.dashboard-wrapper .cbe-block-progress-line {
+    background-color: #14213d !important;
+    border-radius: 10px !important;
+    height: 8px;
+}
+
+.dashboard-wrapper .cbe-block-progress-label-wrapper {
+    display: none !important;
+}
 </style>
 

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$r='C:\\Users\\britn\\OneDrive\\taxi-up-tax'; if(git -C $r status --porcelain){git -C $r add -A; git -C $r commit -m '[TaxiUp] auto-commit' --quiet; git -C $r push origin main --quiet}",
+            "timeout": 30,
+            "statusMessage": "Auto-committing..."
+          }
+        ]
+      }
+    ]
+  }
+}

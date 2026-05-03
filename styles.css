@@ -10,7 +10,8 @@
    ================================================================== */
 /* --- Navy dashed border to match form block --- */
 .dashboard-wrapper .dashboard-organize-box {
-    border: 2px dashed #14213d !important;
+    border: none !important;
+    border-top: 3px solid #14213d !important;
     box-shadow: 0 2px 12px rgba(20, 33, 61, 0.08) !important;
 }
 
@@ -1281,7 +1282,8 @@ body:has(.tu-lp) .main-wrapper:before {
     background: #ffffff !important;
     border-radius: 14px !important;
     box-shadow: 0 2px 12px rgba(20, 33, 61, 0.08) !important;
-    border: 2px dashed #14213d !important;
+    border: none !important;
+    border-top: 3px solid #14213d !important;
     overflow: hidden;
     font-family: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
 }

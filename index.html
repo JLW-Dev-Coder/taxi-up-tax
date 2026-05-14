@@ -166,26 +166,12 @@ ul { list-style: none; padding: 0; }
 .brand-mark {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 900;
-  font-size: 18px;
-  color: var(--tu-navy);
-  letter-spacing: -0.02em;
   transition: transform 0.3s ease;
 }
 .brand-mark:hover { transform: translateY(-1px); }
-.brand-icon {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--tu-navy), var(--tu-navy-soft));
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--tu-white);
-  font-size: 20px;
-  font-weight: 900;
-  border: 2px solid var(--tu-red);
+.brand-mark img {
+  height: 48px;
+  width: auto;
 }
 .header-cta {
   display: inline-flex;
@@ -360,22 +346,25 @@ ul { list-style: none; padding: 0; }
 .hero-photo {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   min-width: 0;
-  padding: 24px 12px 40px;
+  padding: 0;
   animation: fadeIn 1s ease-out 0.3s both;
+  overflow: visible;
 }
 .photo-frame {
   position: relative;
-  width: 100%;
-  max-width: 400px;
+  width: 110%;
+  max-width: 520px;
   border-radius: 0;
   overflow: visible;
   box-shadow: none;
   border: none;
   animation: float 6s ease-in-out infinite;
   transition: transform 0.4s ease;
+  margin-right: -40px;
+  margin-bottom: -100px;
 }
 .photo-frame:hover {
   transform: scale(1.03);
@@ -917,7 +906,7 @@ ul { list-style: none; padding: 0; }
 @media (max-width: 960px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
   .hero-photo { order: -1; padding: 8px 0 24px; }
-  .photo-frame { max-width: 280px; animation: none; }
+  .photo-frame { max-width: 300px; animation: none; margin-right: 0; margin-bottom: 0; width: 100%; }
   .included-grid { grid-template-columns: 1fr; }
   .benefits-cols { grid-template-columns: 1fr; gap: 24px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
@@ -937,8 +926,7 @@ ul { list-style: none; padding: 0; }
 <header class="header">
   <div class="wrap">
     <a href="#top" class="brand-mark">
-      <span class="brand-icon">B</span>
-      Big Global Tax Bosses
+      <img src="https://app.suitedash.com/file/68c3eb190d9e89ef96e8e090fa6158f0/99db4139-a99e-4bbd-be36-570295fa5818/Taxi+Up+Tax_200x60_white_bg.png" alt="Taxi Up Tax Services and More">
     </a>
     <a href="tel:9375831082" class="header-cta">Call 937-583-1082</a>
   </div>

@@ -346,8 +346,8 @@ ul { list-style: none; padding: 0; }
 .hero-photo {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
   min-width: 0;
   padding: 0;
   animation: fadeIn 1s ease-out 0.3s both;
@@ -355,16 +355,15 @@ ul { list-style: none; padding: 0; }
 }
 .photo-frame {
   position: relative;
-  width: 110%;
-  max-width: 520px;
+  width: 100%;
+  max-width: 480px;
   border-radius: 0;
   overflow: visible;
   box-shadow: none;
   border: none;
   animation: float 6s ease-in-out infinite;
   transition: transform 0.4s ease;
-  margin-right: -40px;
-  margin-bottom: -100px;
+  margin-top: -20px;
 }
 .photo-frame:hover {
   transform: scale(1.03);
@@ -906,7 +905,7 @@ ul { list-style: none; padding: 0; }
 @media (max-width: 960px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
   .hero-photo { order: -1; padding: 8px 0 24px; }
-  .photo-frame { max-width: 300px; animation: none; margin-right: 0; margin-bottom: 0; width: 100%; }
+  .photo-frame { max-width: 300px; animation: none; margin-right: 0; margin-bottom: 0; margin-top: 0; width: 100%; }
   .included-grid { grid-template-columns: 1fr; }
   .benefits-cols { grid-template-columns: 1fr; gap: 24px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }

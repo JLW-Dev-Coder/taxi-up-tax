@@ -394,23 +394,6 @@ ul { list-style: none; padding: 0; }
   animation: starsTwinkle 2s ease-in-out infinite;
 }
 .photo-badge .label-text { display: block; line-height: 1.3; margin-top: 2px; }
-.photo-tag {
-  position: absolute;
-  top: 18px;
-  right: 6px;
-  background: var(--tu-navy);
-  color: var(--tu-white);
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  z-index: 2;
-  border: 2px solid var(--tu-red);
-}
-
 /* ===================== HEADINGS ===================== */
 .h2 {
   font-size: clamp(30px, 3.5vw, 42px);
@@ -905,8 +888,9 @@ ul { list-style: none; padding: 0; }
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 960px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
-  .hero-photo { order: -1; padding: 8px 0 24px; }
-  .photo-frame { max-width: 300px; animation: none; margin-right: 0; margin-bottom: 0; margin-top: 0; margin-left: 0; width: 100%; }
+  .hero-photo { order: -1; padding: 0; display: flex; justify-content: center; align-items: center; }
+  .photo-frame { max-width: 220px; animation: none; margin-right: 0; margin-bottom: 0; margin-left: 0; margin-top: 0; width: 100%; }
+  .photo-badge { position: relative; bottom: auto; left: auto; margin: -20px auto 0; max-width: 200px; }
   .included-grid { grid-template-columns: 1fr; }
   .benefits-cols { grid-template-columns: 1fr; gap: 24px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
@@ -917,6 +901,7 @@ ul { list-style: none; padding: 0; }
 @media (max-width: 540px) {
   .footer .wrap { grid-template-columns: 1fr; }
   .hero { padding: 56px 24px 72px; }
+  .photo-frame { max-width: 180px; }
 }
 </style>
 </head>
@@ -956,7 +941,6 @@ ul { list-style: none; padding: 0; }
       </div>
     </div>
     <div class="hero-photo">
-      <span class="photo-tag">Founder</span>
       <div class="photo-frame">
         <img src="assets/taxi-up-tax-virginia-hall.png" alt="Virginia Hall, Founder">
       </div>
@@ -1057,7 +1041,7 @@ ul { list-style: none; padding: 0; }
           <li>1 year of mentorship &amp; support</li>
           <li>Guidance with returns &amp; client acquisition</li>
         </ul>
-        <a href="tel:9375831082" class="price-cta">Call to Enroll — 937-583-1082</a>
+        <a href="https://swipesimple.com/links/lnk_a58ca977fd317077855bb101431214cf" target="_blank" rel="noopener" class="price-cta">Enroll Now — PTIN</a>
       </div>
 
       <!-- ERO -->
@@ -1077,7 +1061,7 @@ ul { list-style: none; padding: 0; }
           <li>1 year of mentorship &amp; support</li>
           <li>Service bureau growth strategy</li>
         </ul>
-        <a href="tel:9375831082" class="price-cta">Call to Enroll — 937-583-1082</a>
+        <a href="https://swipesimple.com/links/lnk_136e904581ae9c958c49a78606cc014d" target="_blank" rel="noopener" class="price-cta">Enroll Now — ERO</a>
       </div>
     </div>
 
